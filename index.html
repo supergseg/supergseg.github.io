@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>supergesg-project</title> 
+  <title>SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians</title> 
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,32 +56,33 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Siyun Liang</a><sup>*</sup>, </span>
+                <a href="https://siyun-liang.github.io" target="_blank">Siyun Liang</a><sup>1*</sup>, </span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sen Wang</a><sup>*</sup>, 
+                  <a href="https://scholar.google.com/citations?user=OxZ9S6oAAAAJ&hl=en&oi=ao" target="_blank">Sen Wang</a><sup>1*</sup>, 
                 </span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kunyi Li</a>, 
+                  <a href="https://li-kunyi.github.io/" target="_blank">Kunyi Li</a><sup>1</sup>, 
                 </span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Michael Nidemier</a>, 
+                  <a href="https://m-niemeyer.github.io/" target="_blank">Michael Niemeyer</a><sup>2</sup>, 
                 </span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Stefano Gasepri</a>, 
+                  <a href="https://campar.in.tum.de/view/Main/StefanoGasperini.html" target="_blank">Stefano Gasperini</a><sup>1,3</sup>, 
+                </span>
+                <p></p>
+                <span class="author-block">
+                  <a href="https://www.professoren.tum.de/en/navab-nassir" target="_blank">Nassir Navab</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Federio</a>, 
-                </span>
-                <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Nassir Navab</a>
+                  <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a><sup>1,2†</sup>
                 </span>
                 </div>
-
+                
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Technical University of Munich, </span>
-                    <span class="author-block">Google,  </span>
-                    <span class="author-block">Munich School of Machine Learning,  </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Technical University of Munich, </span>
+                    <span class="author-block"><sup>2</sup>Google,  </span>
+                    <span class="author-block"><sup>3</sup>Munich Center for Machine Learning  </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, </small><small><sup>†</sup>Corresponding author</small></span><br>
                   </div>
 
                   <div class="column has-text-centered">
@@ -96,17 +97,6 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
 
                   <!-- Github link -->
                   <!-- <span class="link-block">
@@ -175,7 +165,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            3D Gaussian Splatting has recently gained traction for its efficient training and real-time rendering. While the vanilla Guassian Splatting representation is suitable only for view synthesis, more recent works investigated how to extend it with scene understanding and language features. However, existing methods lack a detailed comprehension of scenes, limiting their ability to segment and interpret complex structures. To this end, We introduce SuperGSeg, a novel approach that fosters cohesive, context-aware scene representation by disentangling segmentation and language field distillation. SuperGSeg first employs neural Gaussians to learn hierarchical segmentation features from multi-view images with the aid of off-the-shelf 2D masks. These features are then leveraged to create a sparse set of what we call Super-Gaussians. Super-Gaussians facilitate the distillation of 2D language features into 3D space. Through Super-Gaussians, our method enables high-dimensional language feature rendering without extreme increases in GPU memory. Extensive experiments demonstrate that SuperGSeg outperforms prior works on both open-vocabulary object localization and semantic segmentation tasks.
+            3D Gaussian Splatting has recently gained traction for its efficient training and real-time rendering. While the vanilla Gaussian Splatting representation is mainly designed for view synthesis, more recent works investigated how to extend it with scene understanding and language features. However, existing methods lack a detailed comprehension of scenes, limiting their ability to segment and interpret complex structures. To this end, We introduce SuperGSeg, a novel approach that fosters cohesive, context-aware scene representation by disentangling segmentation and language field distillation. SuperGSeg first employs neural Gaussians to learn instance and hierarchical segmentation features from multi-view images with the aid of off-the-shelf 2D masks. These features are then leveraged to create a sparse set of what we call Super-Gaussians. Super-Gaussians facilitate the distillation of 2D language features into 3D space. Through Super-Gaussians, our method enables high-dimensional language feature rendering without extreme increases in GPU memory. Extensive experiments demonstrate that SuperGSeg outperforms prior works on both open-vocabulary object localization and semantic segmentation tasks.
           </p>
         </div>
       </div>
@@ -190,7 +180,7 @@
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <img src="static/images/main_methods.png" alt="Method overview"/>
+          <img src="static/images/overview.png" alt="Method overview"/>
           <h2 class="subtitle has-text-centered">
             Overview of our SuperGSeg method.
           </h2>
@@ -366,30 +356,6 @@
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -429,7 +395,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -439,7 +405,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
