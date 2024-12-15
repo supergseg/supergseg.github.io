@@ -75,7 +75,7 @@
                   <a href="https://www.professoren.tum.de/en/navab-nassir" target="_blank">Nassir Navab</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a><sup>1,2†</sup>
+                  <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a><sup>1,2</sup>
                 </span>
                 </div>
                 
@@ -84,7 +84,7 @@
                     <span class="author-block"><sup>2</sup>Google,  </span>
                     <span class="author-block"><sup>3</sup>Munich Center for Machine Learning,  </span>
                     <span class="author-block"><sup>4</sup>Visual AI  </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, </small><small><sup>†</sup>Corresponding author</small></span><br>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution
                   </div>
 
                   <div class="column has-text-centered">
@@ -213,15 +213,6 @@
   </div>
 </section>
 <!-- End single image -->
-
-<!-- 3D Gaussian viewer -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Visualization of Super-Gaussians </h2>
-    </div>
-  </div>
-</section>
 
 <!-- Result on LERF_ovs -->
 <!-- <section class="hero is-small">
@@ -361,19 +352,96 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Click-based Object Selection-->
+      <!-- Click-based Object Selection -->
+      <h3 class="title is-3 has-text-centered">Click-based Part/Object Selection</h3>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column is-3">
+              <img src="static/images/click_sheep.png" alt="Click on sheep"/>
+              <h2 class="subtitle has-text-centered">
+                Visual Prompt
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_sheep_part" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/sheep/part.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Cross-Frame Rendering
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_sheep_instance" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/sheep/instance.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Cross-Level Rendering
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_sheep_part_seg" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/sheep/part_seg.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Auto-Part Segmentation
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column is-3">
+              <img src="static/images/click_chashu.png" alt="Click on chashu"/>
+              <h2 class="subtitle has-text-centered">
+                Visual Prompt
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_chashu_part" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/chashu/part.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Cross-Frame Rendering
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_chashu_instance" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/chashu/instance.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Cross-Level Rendering
+              </h2>
+            </div>
+
+            <div class="column is-3">
+              <video poster="" id="click_chashu_part_seg" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/click/chashu/part_seg.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Auto-Part Segmentation
+              </h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Click-based Object Selection -->
       <div class="columns is-centered">
         <div class="column is-half">
-          <h3 class="title is-3 has-text-centered">Click-based Part/Object Selection</h3>
           <div class="content has-text-justified">
             <p>
-              Given a visual prompt(e.g. a click) on the 2D image of an arbitrary viewpoint, SuperGSeg can locate the 3D Gaussians of the clicked <b>part</b> in the 3D space and render the part in arbitrary viewpoint. Learning both hierarchical and instance feature, SuperGSeg allow to find the instance of the part for rendering and render the automatic part segmentation.
+              Given a visual prompt(e.g. a click) on the 2D image of an arbitrary viewpoint, SuperGSeg can locate the 3D Gaussians of the clicked <b>part</b> in the 3D space and render the part in arbitrary viewpoint (cross-frame). Learning both hierarchical and instance feature, SuperGSeg allow to find the instance of the part for rendering (cross-level) and render the automatic part segmentation.
             </p>
           </div>
         </div>
-      </div>
-
-      
     </div>
   </div>
 </section>
