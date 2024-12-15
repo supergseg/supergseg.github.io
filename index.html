@@ -67,7 +67,7 @@
                   <a href="https://m-niemeyer.github.io/" target="_blank">Michael Niemeyer</a><sup>2</sup>, 
                 </span>
                 <span class="author-block">
-                  <a href="https://campar.in.tum.de/view/Main/StefanoGasperini.html" target="_blank">Stefano Gasperini</a><sup>1,3</sup>, 
+                  <a href="https://campar.in.tum.de/view/Main/StefanoGasperini.html" target="_blank">Stefano Gasperini</a><sup>1,3,4</sup>, 
                 </span>
                 <p></p>
                 <span class="author-block">
@@ -81,7 +81,8 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Technical University of Munich, </span>
                     <span class="author-block"><sup>2</sup>Google,  </span>
-                    <span class="author-block"><sup>3</sup>Munich Center for Machine Learning  </span>
+                    <span class="author-block"><sup>3</sup>Munich Center for Machine Learning,  </span>
+                    <span class="author-block"><sup>4</sup>Visual AI  </span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, </small><small><sup>†</sup>Corresponding author</small></span><br>
                   </div>
 
@@ -149,9 +150,12 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="static/images/teaser.png" alt="Teaser"/>
-      <h2 class="subtitle has-text-justified">
-        We present SuperGSeg, a novel method that clusters similar Gaussians into superpoint-like representations, termed Super-Gaussians. By leveraging Super-Gaussians, our approach effectively integrates diverse feature fields to achieve a comprehensive understanding of 3D scenes. SuperGSeg supports a wide range of functionalities, including open-vocabulary semantic segmentation, both promptable and promptless instance segmentation, and finer-grained hierarchical segmentation.
-      </h2>
+      <div class="content has-text-justified">
+        <p>
+          We present SuperGSeg, a novel method that clusters similar Gaussians into superpoint-like representations, termed Super-Gaussians. By leveraging Super-Gaussians, our approach effectively integrates diverse feature fields to achieve a comprehensive understanding of 3D scenes. SuperGSeg supports a wide range of functionalities, including open-vocabulary semantic segmentation, both promptable and promptless instance segmentation, and finer-grained hierarchical segmentation.
+        </p>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -191,207 +195,160 @@
 </section>
 <!-- End single image -->
 
-
-<!-- Image carousel -->
+<!-- 3D Gaussian viewer -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00002_stuffed bear.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00002_stuffed bear.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00006_nori.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00006_nori.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00024_chopsticks.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00024_chopsticks.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00041_red toy chair.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00041_red toy chair.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00089_knife.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00089_knife.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00140_coffee mug.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00140_coffee mug.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00140_frog cup.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00140_frog cup.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/opengs/asset_opengs_frame_00195_rubber duck with buoy.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              OpenGS
-            </h2>
-          </div>
-          <div class="column is-half">
-            <img src="static/images/qualitative_lerf/ours/asset_ours_frame_00195_rubber duck with buoy.png" alt="MY ALT TEXT"/>
-            <h2 class="subtitle has-text-centered">
-              Ours
-            </h2>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div> -->
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
+      <h2 class="title is-3">Visualization of Super-Gaussians </h2>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
+<!-- Result on LERF_ovs -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results on LERF Dataset</h2>
+      
+      <!-- Open-Vocabulary Object Selection-->
+      <h3 class="title is-4">Open-Vocabulary Object Selection</h3>
 
+      <div class="content has-text-justified">
+        <p>
+          Given an arbitrary text query, SuperGSeg can segment the 3D Gaussians in the 3D space directly and render the corresponding masks in arbitrary viewpoint. SuperGSeg provides segmentation with precise boundary and less noise.
+        </p>
+      </div>
 
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b><i>"stuffed bear"</i></b>
+          </h2>
 
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" id="stuffed_bear_opengs" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/opengs/stuffed_bear.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                OpenGS
+              </h2>
+            </div>
+
+            <div class="column is-half">
+              <video poster="" id="stuffed_bear_ours" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/ours/stuffed_bear.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Ours
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b><i>"rubber duck with buoy"</i></b>
+          </h2>
+
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" id="rubber_duck_opengs" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/opengs/rubber_duck.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                OpenGS
+              </h2>
+            </div>
+
+            <div class="column is-half">
+              <video poster="" id="rubber_duck_ous" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/ours/rubber_duck.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Ours
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b><i>"nori"</i></b>
+          </h2>
+
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" id="nori_opengs" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/opengs/nori.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                OpenGS
+              </h2>
+            </div>
+
+            <div class="column is-half">
+              <video poster="" id="nori_ours" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/ours/nori.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Ours
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="subtitle has-text-centered">
+            <b><i>"knife"</i></b>
+          </h2>
+
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <video poster="" id="knife_opengs" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/opengs/knife.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                OpenGS
+              </h2>
+            </div>
+
+            <div class="column is-half">
+              <video poster="" id="knife_ours" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/ours/knife.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">
+                Ours
+              </h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Open-Vocabulary Object Selection -->
+
+      <!-- Click-based Object Selection-->
+      <h3 class="title is-4">Click-based Part/Object Selection</h3>
+      <div class="content has-text-justified">
+        <p>
+          Given a visual prompt(e.g. a click) on the 2D image of an arbitrary viewpoint, SuperGSeg can locate the 3D Gaussians of the clicked <b>part</b> in the 3D space and render the part in arbitrary viewpoint. Learning both hierarchical and instance feature, SuperGSeg allow to find the instance of the part for rendering and render the automatic part segmentation.
+        </p>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- Scannet result -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results on Scannet Dataset</h2>
+    </div>
+  </div>
+</section>
+<!-- End scannet result -->
 
 
 <!-- Paper poster -->
