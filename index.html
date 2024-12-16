@@ -153,7 +153,7 @@
       <img src="static/images/teaser.png" alt="Teaser"/>
       <div class="content has-text-justified">
         <p>
-          We present SuperGSeg, a novel method that clusters similar Gaussians into superpoint-like representations, termed Super-Gaussians. By leveraging Super-Gaussians, our approach effectively integrates diverse feature fields to achieve a comprehensive understanding of 3D scenes. SuperGSeg supports a wide range of functionalities, including open-vocabulary semantic segmentation, both promptable and promptless instance segmentation, and finer-grained hierarchical segmentation.
+          TL;DR. SuperGSeg clusters similar Gaussians into “Super-Gaussians,” merging diverse features for rich 3D scene understanding. It supports open-vocabulary semantic segmentation, promptable/promptless instance segmentation, and hierarchical segmentation.
         </p>
       </div>
       
@@ -205,7 +205,7 @@
         <div class="column is-four-fifths">
           <img src="static/images/sp_modules.png" alt="Method overview"/>
           <h2 class="content has-text-justified">
-            We implement three mapping functions \( F_\phi \), \( F_\varphi \), \( F_\psi \) as MLPs. Each function is tailored to a specific difference in attributes, capturing complex and nuanced information about the relationship between an anchor and its \( k \)-nearest Super-Gaussians independently and encoding the relevancy of that attribute (coordinate, segmentation, or geometry) for the Super-Gaussian assignment into a feature embedding. The final MLP \( F_{sg} \) takes the concatenation of three embeddings as input to integrate the spatial, semantic, and geometric differences into pr
+            We implement three mapping functions as MLPs. Each function is tailored to a specific difference in attributes, capturing complex and nuanced information about the relationship between an anchor and its k-nearest Super-Gaussians independently and encoding the relevancy of that attribute (coordinate, segmentation, or geometry) for the Super-Gaussian assignment into a feature embedding. The final MLP takes the concatenation of three embeddings as input to integrate the spatial, semantic, and geometric differences into probalistic assignment.
           </h2>
         </div>
       </div>
